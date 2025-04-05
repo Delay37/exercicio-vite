@@ -1,1 +1,88 @@
-body{background-color: blue;}
+body{background-color: #8FBCB3;}
+.centralizar{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.bloco{
+    width: 48%;
+    display: grid;
+    border: gray solid;
+    background-color: #dfe6ed;
+    height: 25%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "input1 resultado"
+    "input2 resultado"
+    "botao resultado";
+    gap: 5px;
+    padding: 10px;
+}
+input{
+    border-radius: 5px;
+    padding-left: 20px;
+}
+button{
+    border-radius: 5px;
+    background-color: #788895;
+    color: white;
+    font-size:20px ;
+}
+#texto1{
+    grid-area: input1;
+}
+#texto2{
+    grid-area: input2;
+}
+#concatenar{
+    grid-area: botao;
+}
+#numero1{
+    grid-area: input1;
+}
+#numero2{
+    grid-area: input2;
+}
+#dividir{
+    grid-area: botao;
+}
+.resultado{
+    grid-area: resultado;
+    border: #c3cfd9 solid;
+    background-color: lightgrey;
+}
+.resultado > header{
+    padding: 5px 5px;
+    
+}
+#resultado_concat, #resultado_divisao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+#resultado_concat > h1{
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+}
+#resultado_divisao > h1{
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+}
+h3{
+    margin: 0;
+    overflow: hidden;
+}
+@media (max-width: 600px){
+.centralizar{
+    flex-direction: column;
+}
+.bloco{
+    width: 100%;
+}
+}

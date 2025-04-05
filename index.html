@@ -2,9 +2,13 @@
 <head>
     <meta charset="UTF-8">
     <title>exercicio vite</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="index.js"></script>
 </head>
 <body>
-    <h1>Titulo</h1>
-    <script type="module" src="main.js"></script>
+    <main class="centralizar">
+        <div class="bloco"><input type="text" id="texto1" placeholder="Nome"><input type="text" id="texto2" placeholder="Sobrenome"><button onclick="juntaTexto()" id="concatenar">Concatenar</button><div class="resultado"><header><h3>Resultado:</h3></header><div id="resultado_concat"><h1>-</h1></div></div></div>
+        <div class="bloco"><input type="text" id="numero1" placeholder="Digite um numero"><input type="text" id="numero2" placeholder="Digite um numero"><button onclick="divideNumero()" id="dividir">Dividir</button><div class="resultado"><header><h3>Resultado:</h3></header><div id="resultado_divisao"><h1>0</h1></div></div></div>
+    </main>
 </body>
 </html>
